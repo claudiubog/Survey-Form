@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please complet this Survey so that we can improve </p>
+    </header>
+    <form id="survey-form" action="https://register-demo.freecodecamp.org">
+    <!-- I creeate this fieldset only the user to enter his Information about himself-->
+    <fieldset>
+      <label id="name-label" for="name" name="name-label">Name: <input id="name" type="text" name="first-name" placeholder="Enter your Name" required ></label>
+      <label id="number-label" for="number">Phone Numer: <input id="number" type="number" name="phone-number" min="10" max="1000000000000" placeholder="ex:+40.799.900.000" required></label>
+      <label id="email-label" for="email">Email: <input id="email" type="email" name="email" placeholder="ex:name@email.com" required></label>
+      <label for="age">Age: <input id="age" type="number" name="age" min="16" max="68" required></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Describe your current role:
+        <select id="dropdown" name="role">
+          <option value="">Select one</option>
+          <option value="1">Student</option>
+          <option value="2">Intern</option>
+          <option value="3">Part time Job</option>
+          <option value="4">Full time Job</option>
+          <option value="5">Other</option>
+        </select> 
+      </label>
+    </fieldset>
+    <!-- This Fieldset is about a feedback about the company-->
+    <fieldset>
+      <label class="recomand">Would you recomand our company:
+      <input name="recomand" type="radio" value="yes"> Yes
+      <input name="recomand" type="radio" value="no"> No
+      <input name="recomand" type="radio" value="maybe"> Maybe
+      </label>
+    </fieldset>
+    <!-- This Fieldset is about a checkbox input where user need to select multiple -->
+    <fieldset>
+      <p>Tell us what you like about us:</p>
+      <label><input name="like" type="checkbox" value="front-end courses" />Front-End courses</label>
+      <label><input name="like" type="checkbox" value="back-end courses"/>Back-End courses</label>
+      <label><input name="like" type="checkbox" value="python courses" />Python courses</label>
+      <label><input name="like" type="checkbox" value="jave-script courses" />Java-Script courses</label>
+      <label><input name="like" type="checkbox" value="forum" />Forum</label>
+      <label><input name="like" type="checkbox" value="open source community" />Open Source Community</label>
+      <label><input name="like" type="checkbox" value="platform" />Platform</label>
+    </fieldset>
+    <!-- This Fieldset is about-->
+    <fieldset>
+
+    </fieldset>
+    <!-- In this fieldset we creeate a space where the user enter a short biography about himself-->
+    <fieldset>
+      <label for="bio">Bio:
+        <textarea id="bio" name="bio" rows="2" cols="35" placeholder="Let us a biography about you..."></textarea>
+      </label>
+    </fieldset>
+    <!-- This is a submit buttom that send all the data to the server-->
+    <input id="submit" type="submit" value="Submit">
+    <!-- This is a reset buttom that reset all the date we enter-->
+    <input type="reset" value="Reset the value">
+    </form>
+  </body>
+</html>
