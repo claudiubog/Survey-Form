@@ -1,0 +1,33 @@
+* {
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+}
+body{
+  display: flex;
+  justifiy-content: center;
+  align-items: center;
+  font-family: Arial;
+  flex-wrap: nowrap;
+  background: linear-gradient(45deg, orange 10%, #808000 35%);
+  color: white;
+}
+/*.title, .description {
+  font-family: Arial, Tachoma;
+}
+fieldset {
+  border: none;
+
+  
+
+}
+label {
+  display: block;
+
+input {
+  background-color: 
+}
+.submit {
+
+}*/
