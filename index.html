@@ -12,13 +12,13 @@
     </header>
     <form id="survey-form" action="https://register-demo.freecodecamp.org">
     <!-- I creeate this fieldset only the user to enter his Information about himself-->
-    <fieldset>
+    <fieldset class="first">
       <label id="name-label" for="name" name="name-label">Name: <input id="name" type="text" name="first-name" placeholder="Enter your Name" required ></label>
-      <label id="number-label" for="number">Phone Numer: <input id="number" type="number" name="phone-number" min="10" max="1000000000000" placeholder="ex:+40.799.900.000" required></label>
+      <label id="number-label" for="number">Phone Numer: <input id="number" type="tel" name="phone-number" min="10" max="1000000000000" placeholder="ex:+40.799.900.000" required></label>
       <label id="email-label" for="email">Email: <input id="email" type="email" name="email" placeholder="ex:name@email.com" required></label>
       <label for="age">Age: <input id="age" type="number" name="age" min="16" max="68" required></label>
     </fieldset>
-    <fieldset>
+    <fieldset class="second">
       <label for="dropdown">Describe your current role:
         <select id="dropdown" name="role">
           <option value="">Select one</option>
@@ -31,7 +31,7 @@
       </label>
     </fieldset>
     <!-- This Fieldset is about a feedback about the company-->
-    <fieldset>
+    <fieldset class="recomand">
       <label class="recomand">Would you recomand our company:
       <input name="recomand" type="radio" value="yes"> Yes
       <input name="recomand" type="radio" value="no"> No
@@ -56,7 +56,7 @@
     <!-- In this fieldset we creeate a space where the user enter a short biography about himself-->
     <fieldset>
       <label for="bio">Bio:
-        <textarea id="bio" name="bio" rows="2" cols="35" placeholder="Let us a biography about you..."></textarea>
+        <textarea id="bio" name="bio" rows="5" cols="40" placeholder="Let us a biography about you..."></textarea>
       </label>
     </fieldset>
     <!-- This is a submit buttom that send all the data to the server-->
